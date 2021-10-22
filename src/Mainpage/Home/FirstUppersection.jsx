@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Mainsection() {
+function FirstUppersection() {
     return (
         <div>
-
+            
         </div>
     )
 }
 
-export default Mainsection;
+export default FirstUppersection

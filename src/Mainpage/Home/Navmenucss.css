@@ -1,0 +1,100 @@
+.main-container {
+    background-color: white;
+    border: 0.1px solid brown;
+    height: 70px;
+    width: 98%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: -2px 0px;
+    margin: 1.2rem 0.7%;
+}
+
+.logo-img {
+    margin: -12px -14px;
+    height: 80px;
+    width: 80px;
+
+}
+
+.logo-img img {
+    height: 60px;
+    width: 60px;
+}
+
+.Menu-options-ul li {
+    padding: 10px 0px;
+    padding-left: 61px;
+}
+
+.Menu-options a {
+    text-decoration: none;
+    color: gray;
+    list-style: none;
+    margin-left: 54px;
+}
+
+.Menu-options a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    /* text-underline-position: ; */
+    text-decoration: underline;
+    text-decoration-color: rosybrown;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 6px;
+
+
+
+}
+
+
+
+
+.cartshow-loginshow-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.cartshow-section,
+.login-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 110px;
+    background-color: white;
+    border: none;
+    margin-left: 23px;
+}
+
+
+.para {
+    font-size: 30px;
+    margin: 6px;
+
+}
+
+.cartshow-section,
+.login-section {
+    color: black;
+}
+
+.cartshow-section:hover {
+
+    opacity: 0.6;
+}
+
+.login-section:hover {
+    opacity: 0.6;
+}
+
+.Aboutpage-main-container {
+    padding-top: 200px;
+    margin-top: 500px;
+}

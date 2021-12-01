@@ -1,11 +1,20 @@
-import React from 'react'
-import Navmenubar from './Navmenubar'
+import React from "react";
+import Navmenubar from "./Navmenubar";
+import FirstUppersection from "./FirstUppersection";
+import FeaturedProduct from "./FeaturedProduct";
+import Services from "./Services";
+import Contactus from './Contactus'
+
 function Home() {
-    return (
-        <div>
-            <Navmenubar />
-        </div>
-    )
+  return (
+    <div>
+      <Navmenubar />
+      <FirstUppersection />
+      <FeaturedProduct />
+      <Services/>
+      <Contactus/>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

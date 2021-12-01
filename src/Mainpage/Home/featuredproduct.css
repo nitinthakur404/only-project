@@ -1,0 +1,65 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.FeaturedProduct-main-container {
+       width: 100%;
+    height: 36rem;
+    border: 2px solid transparent;
+    background-color: #d4e9f0fb;
+    margin: 13.9px 0px;
+}
+.FeaturedProduct-Heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.FeaturedProduct-Heading h1{
+    color: #222046;
+    font-size: 2.4rem;
+    padding-top: 5rem;
+}
+.blank-underline{
+    height: 0.3rem;
+    width: 10rem;
+    background-color: rgba(160, 66, 4, 0.774);
+    display: flex;
+    justify-content: center;
+}
+.coming-Soon-article{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+}
+.Coming-soon{
+    font-size: 4rem;
+}
+.coming-Soon-article p{
+    font-size: 2rem;
+}
+.handleAllProduct{
+    margin: 0rem 4rem;
+    outline: none;
+    border: transparent;
+    background-color:rgb(72, 159, 185);;
+    color: white;
+    FONT-SIZE: 17.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    transition: background-color 1s,border-radius 1s, color 1s;
+    /* transition-property: background-color 2s,color 2s; */
+}
+.handleAllProduct:hover{
+    background-color: rgb(169, 218, 231);
+    color: rgba(65, 64, 64, 0.719);
+    border-radius:90px;
+}

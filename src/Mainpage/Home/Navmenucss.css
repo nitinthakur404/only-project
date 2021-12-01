@@ -1,6 +1,6 @@
 .main-container {
     background-color: white;
-    border: 0.1px solid brown;
+    border: 0.1px solid transparent;
     height: 70px;
     width: 98%;
     display: flex;
@@ -14,7 +14,7 @@
 }
 
 .logo-img {
-    margin: -12px -14px;
+    margin: -13px -39px;
     height: 80px;
     width: 80px;
 

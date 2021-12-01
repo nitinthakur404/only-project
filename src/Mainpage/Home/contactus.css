@@ -1,0 +1,78 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.Contactus-section {
+  height: 42rem;
+  width: 100%;
+  border: 2px solid transparent;
+  margin: 14px 0.1px;
+  display: flex;
+  flex-direction: row;
+}
+.left-section {
+  border: 2px solid transparent;
+  display: flex;
+  height: 42rem;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  margin-left: 76px;
+}
+
+.left-section-h1 {
+  font-size: 2.2rem;
+  margin-top: 118px;
+}
+.left-section-para {
+  width: 88%;
+  padding: 25px 0.1px;
+  line-height: 30px;
+  color: #22406dd1;
+}
+.right-section {
+  width: 55.5%;
+  height: 42rem;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-box {
+  width: 24rem;
+  height: 2.3rem;
+  border: 2px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: relative;
+  top: 10%;
+}
+
+input.input-box {
+  font-size: 1rem;
+  padding-left: 13px;
+  color: #122938d1;
+}
+.handle-input-box {
+  width: 8rem;
+  border: 2px solid black;
+  height: 2.3rem;
+  border-left: none;
+  background-color: #b97346de;
+  font-size: 1rem;
+  font-weight: inherit;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: color 0.5s;
+  position: relative;
+  top: 10%;
+  letter-spacing: 0.2rem;
+}
+.handle-input-box:hover {
+  color: rgb(241, 210, 210);
+}

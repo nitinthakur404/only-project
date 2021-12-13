@@ -4,6 +4,7 @@ import FirstUppersection from "./FirstUppersection";
 import FeaturedProduct from "./FeaturedProduct";
 import Services from "./Services";
 import Contactus from './Contactus'
+// import {} from '../product/Product'
 
 function Home() {
   return (

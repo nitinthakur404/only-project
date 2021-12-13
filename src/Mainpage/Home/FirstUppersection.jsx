@@ -11,7 +11,8 @@ function FirstUppersection() {
         </h1>
         <p className="container_first_para"> 
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at sed omnis corporis doloremque possimus velit! Repudiandae nisi odit, aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis alias?</p>
-        <button  className='container_first_button'>Shop Now</button>
+        <button  className='container_first_button'>
+        <a href='../product'>Shop Now</a></button>
       </article> 
 
       <article className="container_second">

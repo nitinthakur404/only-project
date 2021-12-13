@@ -12,7 +12,7 @@ const FeaturedProduct = () => {
       <article className="coming-Soon-article">
         <h1 className="Coming-soon"> Comming Soon</h1>
         <p>We'r Currently working on creating This feature</p>
-      <button className="handleAllProduct"> ALL  Product</button>
+      <button className="handleAllProduct"><a href='../product'> ALL  Product</a></button>
       </article>
       
     </section>

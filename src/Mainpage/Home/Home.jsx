@@ -9,11 +9,11 @@ import Contactus from './Contactus'
 function Home() {
   return (
     <div>
-      <Navmenubar />
+      {/* <Navmenubar />
       <FirstUppersection />
       <FeaturedProduct />
       <Services/>
-      <Contactus/>
+      <Contactus/> */}
     </div>
   );
 }

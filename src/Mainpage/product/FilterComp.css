@@ -1,0 +1,16 @@
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  box-sizing: border-box;
+}
+
+.filter-container {
+  width: 15rem;
+  height: Auto;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 9rem;
+}
+

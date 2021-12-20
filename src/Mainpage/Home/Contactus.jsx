@@ -19,10 +19,10 @@ function Contactus() {
         </button>
       </article>
     </section>
-        <div className="footer">
-          <Footer />
-        </div>
-        </>
+    <div className="footer">
+      <Footer />
+    </div>
+  </>
   );
 }
 

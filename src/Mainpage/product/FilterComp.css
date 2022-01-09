@@ -5,12 +5,92 @@
 }
 
 .filter-container {
+  border: 2px solid transparent;
   width: 15rem;
+  margin: 4rem 4.1rem;
   height: Auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .category {
   display: flex;
   flex-direction: column;
   width: 9rem;
 }
+.inputbox {
+  width: 12.4rem;
+  height: 2.1rem;
+}
+.inputbox[type="text"] {
+  background-color: rgb(227, 239, 243);
+  border-radius: 1px;
+  border: none;
+  padding: 3px 24px;
+  font-size: 16px;
+}
+.category p {
+  font-size: 20px;
+  font-family: -webkit-pictograph;
+  font-weight: bolder;
+}
+.categoryFilter {
+  border: transparent;
+  background-color: transparent;
+  padding: 4.2px 0px;
+  font-size: 16.4px;
+  color: rgb(117 136 183);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.categoryFilter:hover {
+  color: rgb(0, 70, 248);
+}
 
+.categoryFilterContainer {
+}
+
+.categoryFilter:focus {
+  text-decoration: underline;
+  text-decoration-color: rgb(158, 190, 216);
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
+.Brandcompo {
+  cursor: pointer;
+  padding-top: 15px;
+}
+.Brandcompo h3 {
+  font-size: 20px;
+  font-family: -webkit-pictograph;
+  font-weight: bolder;
+}
+.Pricerange p {
+  padding-top: 20px;
+  font-size: 15px;
+  font-family: -webkit-pictograph;
+  /* font-weight: bolder; */
+}
+.clearfilte {
+  padding-top: 10px;
+}
+.clearfiltebutton {
+  cursor: pointer;
+  width: 108px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  align-content: space-around;
+  background-color: rgba(236, 55, 55, 0.719);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+.clearfiltebutton:hover {
+  background-color: red;
+}

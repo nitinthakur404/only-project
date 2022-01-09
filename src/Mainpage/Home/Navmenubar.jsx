@@ -8,9 +8,9 @@ function Navmenubar() {
   return (
     <div className="main-container">
       <div className="logo-img">
-        <a href="../">
-          <img src="./image/logoimg1.png" alt="img"></img>
-        </a>
+        <Link to="../">
+          <img src="../image/logoimg1.png" alt="img"></img>
+        </Link>
       </div>
       <div className="Menu-options">
         <Link className=".Menu-options-ul" to="/">
@@ -34,5 +34,7 @@ function Navmenubar() {
     </div>
   );
 }
+
+// https://www.linkpicture.com/q/logo_402.png
 
 export default Navmenubar;

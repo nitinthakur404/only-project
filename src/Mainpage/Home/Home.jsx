@@ -12,8 +12,8 @@ function Home() {
       {/* <Navmenubar />
       <FirstUppersection />
       <FeaturedProduct />
-      <Services/>
-      <Contactus/> */}
+      <Services />
+      <Contactus /> */}
     </div>
   );
 }

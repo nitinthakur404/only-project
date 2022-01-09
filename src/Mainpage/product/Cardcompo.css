@@ -1,0 +1,71 @@
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+.homeLink {
+  color: #795744;
+}
+
+.container-card {
+  position: relative;
+  border: transparent;
+  width: 305px;
+  height: 220px;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 19px 15px;
+  border-radius: 5px;
+}
+.CardcompoImgcontainer img {
+  position: absolute;
+  object-fit: cover;
+  width: 299px;
+  height: 179px;
+  border-radius: 5px;
+  z-index: 1;
+  left: 3px;
+}
+.namepricedetails {
+  left: -1%;
+  top: 87%;
+  width: 293px;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.namedetils {
+  color: #1d3350;
+}
+.pricedetils {
+  color: rgb(209, 142, 79);
+}
+.secondDetailspage {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  width: 299px;
+  height: 179px;
+  opacity: 0;
+  transition: all 0.3s;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.secondDetailspage:hover {
+  background-color: rgba(61, 56, 56, 0.452);
+  opacity: 1;
+}
+.hoverbutton {
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: 60px;
+  background-color: transparent;
+  border: none;
+  color: pink;
+}

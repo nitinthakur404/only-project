@@ -3,6 +3,12 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: style1;
+  src: url("../Poppins/Poppins-Light.ttf");
+}
+
 .upperheading {
   border: 2px solid transparent;
   background-color: #eaded7;
@@ -12,17 +18,20 @@
   align-items: center;
   padding: 16px 91px;
   font-size: 25px;
+  color: #324d67;
 }
-.completerDetailsCompo {
+.completerDetailsCompo{
 }
+
 .completerDetailsSection {
   height: 60rem;
   border: 2px solid red;
   width: 98%;
   margin: 14px 1%;
+  display: flex;
 }
 .completerDetailsSection-RightSection {
-  border: 2px solid green;
+  border: 2px solid transparent;
   height: 38rem;
   width: 48%;
 }
@@ -41,13 +50,14 @@
 .RightSectionImg img {
   width: 553px;
   height: 500px;
-  margin: 45px 66px;
+  margin: 10px 66px;
   object-fit: cover;
+  border-radius: 5px;
 }
 .slideImageShow {
   display: flex;
   margin-left: 56px;
-  padding: 30px 4.7px;
+  padding: 60px 4.7px;
 }
 .slideImageShowInMap {
   margin: -49px 7.8px;
@@ -56,4 +66,96 @@
   height: 77px;
   width: 97px;
   object-fit: cover;
+}
+.slideImageShowInMap img:visited {
+  border: 2px solid transparent;
+}
+.completerDetailsSection-LeftSection {
+  border: 2px solid transparent;
+  height: 38rem;
+  width: 48%;
+  margin-left: 4rem;
+  color: #324d67;
+  margin-top: 9%;
+}
+
+.activeed {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+.nulled {
+  border: 0.5px solid gray;
+}
+.nameHeading {
+  padding-top: 1.6%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.price {
+  color: rgb(233, 130, 45);
+  font-size: 20px;
+  font-weight: 600;
+}
+.productDetails {
+  font-family: style1;
+  line-height: 2;
+  max-width: 45em;
+  padding-top: 28px;
+}
+.stockcheck {
+  margin-top: 25px;
+}
+.span1 {
+  font-weight: 700;
+}
+.horizantalline {
+  margin: 33px 8px;
+  width: 96%;
+}
+.addToCartShowDiv {
+  display: flex;
+}
+.addToCartShowDiv {
+}
+.samebutton {
+  font-size: 2.2rem;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  width: 31px;
+  justify-content: center;
+  margin: 15px 15px;
+}
+.itemNoShow {
+  font-size: 2.2rem;
+  padding: 4px 2px;
+  font-weight: 800;
+  border: 2px solid transparent;
+  height: 70px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.removebutton {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.addbutton {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.addToCartShowToggle {
+  /* display: none; */
+}
+.addtocartbutton {
+  height: 2.2rem;
+  width: 9.9rem;
+  background-color: #e95c76;
+  border: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 12px;
 }

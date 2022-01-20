@@ -11,8 +11,9 @@ function Product(props) {
     const [inputgetdata, setinputgetdata] = useState()
 
     // console.log(passingData, "inside of product")
-    return (<>
-        <div className="About">
+    return (
+        <>
+            {/* <div className="About">
             <Navmenubar />
 
             <div className="upperHeadingPageName">
@@ -33,8 +34,8 @@ function Product(props) {
             <div className='footerCompo' >
                 <Footer />
             </div>
-        </div>
-    </>
+        </div> */}
+        </>
     )
 }
 

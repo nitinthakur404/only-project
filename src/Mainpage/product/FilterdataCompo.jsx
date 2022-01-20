@@ -69,8 +69,6 @@ function Filter(props) {
                     return item.category !== filters["All"];
                 })
                 data = [...brandFilter]
-
-
             }
 
             else {
@@ -95,7 +93,7 @@ function Filter(props) {
 
             else {
                 const priceFilter = Database.filter((item) => {
-                    return (item.price <= filters.price)
+                    return ((item.price) <=  filters.price)
                 })
                 data = [...priceFilter]
             }
@@ -163,7 +161,7 @@ function Filter(props) {
                     setpricerange(3999)
                     setfilters({})
                     setsecondStoredata(Database)
-                        
+
 
                 }}  > clear filters</button>
             </article>

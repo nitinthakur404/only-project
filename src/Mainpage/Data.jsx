@@ -6,10 +6,10 @@ let Data = [
     name: "Bar Stool",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 309,
-    Available: "in stock",
+    Available: true,
     Brand: "Godrej Interio",
     color: "black",
-    quantity: 10,
+    quantity: 4,
     category: 'Dinning Table'
   }, {
     id: 2,
@@ -17,7 +17,7 @@ let Data = [
     name: "Albany Table",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 3099,
-    Available: "in stock",
+    Available: true,
     Brand: "Godrej Interio",
     color: "black",
     quantity: 3,
@@ -29,7 +29,7 @@ let Data = [
     name: "Armchair",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1250,
-    Available: "in Stock",
+    Available: true,
     Brand: "Nilkamal",
     color: "black",
     quantity: 5,
@@ -41,7 +41,7 @@ let Data = [
     name: "Suede Armchair",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1599,
-    Available: "in Stock",
+    Available: true,
     Brand: "Hulsta",
     color: "black",
     quantity: 3,
@@ -53,10 +53,10 @@ let Data = [
     name: "Leather Chair",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 255,
-    Available: "in Stock",
+    Available: true,
     Brand: "Hulsta",
     color: "black",
-    quantity: 3,
+    quantity: 8,
     category: 'Bedroom'
   },
   {
@@ -65,10 +65,10 @@ let Data = [
     name: "Emperor Bed",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 139,
-    Available: "Out Of Stock",
+    Available: false,
     Brand: "Ikea",
     color: "black",
-    quantity: 3,
+    quantity: 5,
     category: 'Bedroom'
   },
   {
@@ -77,10 +77,10 @@ let Data = [
     name: "Accent Chair",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 259,
-    Available: "In Stock",
+    Available: true,
     Brand: "Nilkamal",
     color: "black",
-    quantity: 3,
+    quantity: 5,
     category: 'Office'
   },
   {
@@ -89,10 +89,10 @@ let Data = [
     name: "Shelf",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 309,
-    Available: "In Stock",
+    Available: true,
     Brand: "Ikea",
     color: "black",
-    quantity: 3,
+    quantity: 5,
     category: 'Living Room'
   },
   {
@@ -101,10 +101,10 @@ let Data = [
     name: "Modern Bookshelf",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: "319",
-    Available: "In Stock",
+    Available: true,
     Brand: "Hulsta",
     color: "black",
-    quantity: 3,
+    quantity: 5,
     category: 'Kids'
   },
 
@@ -114,7 +114,7 @@ let Data = [
     name: "Wooden Desk",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1509,
-    Available: "in Stock",
+    Available: true,
     Brand: "Ikea",
     color: "black",
     quantity: 3,
@@ -126,10 +126,10 @@ let Data = [
     name: "Wooden Table",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 2349,
-    Available: "in Stock",
+    Available: true,
     Brand: "Hulsta",
     color: "black",
-    quantity: 3,
+    quantity: 4,
     category: 'Kitchen Table'
   },
   {
@@ -138,10 +138,10 @@ let Data = [
     name: "Wooden Bed",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 2100,
-    Available: "in Stock",
+    Available: true,
     Brand: "Ikea",
     color: "black",
-    quantity: 3,
+    quantity: 4,
     category: 'Bedroom'
   },
   {
@@ -150,10 +150,10 @@ let Data = [
     name: "Albany Table",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 3099,
-    Available: "in Stock",
+    Available: false,
     Brand: "Godrej Interio",
     color: "black",
-    quantity: 3,
+    quantity: 5,
     category: 'Living Room'
   },
   {
@@ -162,10 +162,10 @@ let Data = [
     name: "High-Back Bench",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 399,
-    Available: "In Stock",
+    Available: true,
     Brand: "Ikea",
     color: "black",
-    quantity: 3,
+    quantity: 10,
     category: 'Office',
   },
 
@@ -175,10 +175,10 @@ let Data = [
     name: "Wooden Desk",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1752,
-    Available: "In Stock",
+    Available: false,
     Brand: "Ikea",
     color: "black",
-    quantity: 3,
+    quantity: 5,
     category: 'Office',
   },
 
@@ -188,10 +188,10 @@ let Data = [
     name: "Dinning Table Table",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1299,
-    Available: "In Stock",
+    Available: true,
     Brand: "Ikea",
     color: "black",
-    quantity: 3,
+    quantity: 4,
     category: 'Dinning Table'
   },
   {
@@ -200,10 +200,10 @@ let Data = [
     name: "Entertainment Center",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 3099,
-    Available: "In Stock",
+    Available: true,
     Brand: "Ikea",
     color: "Hulsta",
-    quantity: 3,
+    quantity: 6,
     category: 'Living Room'
   },
   {
@@ -212,10 +212,10 @@ let Data = [
     name: "Utopia Sofa",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1500,
-    Available: "In Stock",
+    Available: true,
     Brand: "Godrej Interio",
     color: "black",
-    quantity: 3,
+    quantity: 4,
     category: 'Living Room'
   },
   {
@@ -224,10 +224,10 @@ let Data = [
     name: "Leather Sofa",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1750,
-    Available: "In Stock",
+    Available: true,
     Brand: "Godrej Interio",
     color: "black",
-    quantity: 3,
+    quantity: 6,
     category: 'Office'
   },
   {
@@ -236,10 +236,10 @@ let Data = [
     name: "Albany Sectional",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1099,
-    Available: "out of Stock",
+    Available: false,
     Brand: "Godrej Interio",
     color: "black",
-    quantity: 3,
+    quantity: 5,
     category: 'Living Room'
   },
 
@@ -250,10 +250,10 @@ let Data = [
     name: "Simple Chair",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1200,
-    Available: "in Stock",
+    Available: true,
     Brand: "Godrej Interio",
     color: "black",
-    quantity: 3,
+    quantity: 4,
     category: 'Living Room'
   },
   {
@@ -262,10 +262,10 @@ let Data = [
     name: "Vase Table",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1400,
-    Available: "in Stock",
+    Available: true,
     Brand: "Nilkamal",
     color: "black",
-    quantity: 3,
+    quantity: 6,
     category: 'Office',
   },
   {
@@ -274,10 +274,10 @@ let Data = [
     name: "Sofa Set",
     info: "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
     price: 1500,
-    Available: "in Stock",
+    Available: false,
     Brand: "Marcos",
     color: "black",
-    quantity: 3,
+    quantity: 6,
     category: 'Living Room',
   },
 ];

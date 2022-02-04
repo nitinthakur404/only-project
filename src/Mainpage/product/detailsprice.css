@@ -1,0 +1,23 @@
+.priceDetailscontainer {
+  width: 22em;
+  height: 13em;
+  float: Right;
+  margin: 14px 78px;
+  padding: 4px 3px;
+  margin-top: 34px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, green, rgba(0, 0, 0, 0)) 1 100%;
+}
+.Subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 0.2em 2.9em;
+  font-size: 22px;
+}
+.hrpriceLine {
+  width: 95%;
+  margin: 16px 25px;
+}

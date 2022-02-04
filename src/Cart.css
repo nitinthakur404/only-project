@@ -1,0 +1,186 @@
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+.upperHeadingPageName {
+  border: 2px solid transparent;
+  background-color: #eaded7;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  padding: 16px 91px;
+  font-size: 1.6rem;
+}
+
+.contant_table {
+  border-collapse: collapse;
+  width: 94%;
+  /* border: 2px solid transparent; */
+  margin: 6.1vh 3.1%;
+  font-size: 1.2em;
+}
+.contant_table thead tr th {
+  height: 29px;
+  width: 89px;
+  font-weight: lighter;
+  margin: -4.3px 165px;
+  margin-left: 59px;
+}
+.contant_table thead tr {
+  display: flex;
+  height: 50px;
+  align-items: flex-end;
+}
+.hrCartLine1 {
+  width: 95%;
+  margin: 16px 25px;
+}
+.contant_table tbody tr {
+  display: flex;
+  height: 50px;
+  align-items: flex-end;
+}
+.dynamicItemshow img {
+  width: 110px;
+  height: 75px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.thprice {
+  position: absolute;
+  left: 29%;
+}
+.thquantity {
+  position: absolute;
+  left: 36em;
+}
+.thSubtotal {
+  position: absolute;
+  left: 50em;
+}
+.dynamicItemshow {
+  border: 0.1px solid transparent;
+  width: 94%;
+  font-size: 1.2em;
+  margin: 1em 33px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 2px;
+}
+.itemimage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.itemname {
+  height: 2.2em;
+  font-size: 20px;
+  border: 0.1px solid transparent;
+  width: 14em;
+  display: flex;
+  align-items: center;
+}
+.itemprice {
+  position: absolute;
+  margin-left: 28.7%;
+}
+.itemNochangeButton {
+  position: absolute;
+  margin-left: 49.4%;
+}
+.subtotal {
+  margin-left: 71%;
+  position: absolute;
+}
+
+.itemNochangeButton {
+  font-size: 1.6em;
+  height: 76px;
+  border: 2px solid transparent;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.increment {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  margin-bottom: 12px;
+}
+.decrement {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+.noOfquantity {
+  padding: 6px 8px;
+  /* cursor: pointer; */
+}
+.divRemoveButton {
+  margin-left: 84%;
+  position: absolute;
+}
+.Removebutton {
+  background-color: #d30d0d;
+  border: 1px solid transparent;
+  color: white;
+  font-size: 0.8em;
+}
+
+.cartEmpty {
+  height: 21em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.cartEmptyheading {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.cartEmptyBtn {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+}
+
+.cartEmptyBtn {
+  background-image: linear-gradient(
+    to right,
+    #dd5e89 0%,
+    #f7bb97 51%,
+    #dd5e89 100%
+  );
+}
+.cartEmptyBtn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: none;
+}
+
+.cartEmptyBtn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.footerpage {
+}

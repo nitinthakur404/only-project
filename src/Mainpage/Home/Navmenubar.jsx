@@ -4,7 +4,18 @@ import "./Navmenucss.css";
 import { BsFillCartFill } from "react-icons/bs";
 import { RiAccountCircleFill } from "react-icons/ri";
 
+
+
 function Navmenubar() {
+  let addvalue = 0
+  if (JSON.parse(localStorage.getItem('cart')) != null) {
+    const getdata = JSON.parse(localStorage.getItem('cart'))
+    const noOfcartItem = getdata.map((item) => {
+      addvalue = addvalue + item.nocartitem
+    })
+  }
+  // console.log(addvalue)
+
   return (
     <div className="main-container">
       <div className="logo-img">
@@ -21,10 +32,13 @@ function Navmenubar() {
       </div>
 
       <div className="cartshow-loginshow-section">
-        <button className="cartshow-section">
-          <p className="para">cart</p>
-          <BsFillCartFill size="24px" />
-        </button>
+        <Link to='/cart'>
+          <button className="cartshow-section">
+            <p className="para">cart</p>
+            <BsFillCartFill size="24px" />
+            <div className="cartitamshow">{addvalue}</div>
+          </button>
+        </Link>
 
         <button className="login-section">
           <p className="para">login</p>
@@ -32,9 +46,7 @@ function Navmenubar() {
         </button>
       </div>
     </div>
+
   );
 }
-
-// https://www.linkpicture.com/q/logo_402.png
-
 export default Navmenubar;

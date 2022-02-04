@@ -10,6 +10,7 @@ let Data = [
     Brand: "Godrej Interio",
     color: "black",
     quantity: 4,
+    showcase: false,
     category: 'Dinning Table'
   }, {
     id: 2,
@@ -20,7 +21,8 @@ let Data = [
     Available: true,
     Brand: "Godrej Interio",
     color: "black",
-    quantity: 3,
+    quantity: 6,
+    showcase: false,
     category: 'Kitchen Table'
   },
   {
@@ -33,6 +35,7 @@ let Data = [
     Brand: "Nilkamal",
     color: "black",
     quantity: 5,
+    showcase: false,
     category: 'Bedroom'
   },
   {
@@ -44,8 +47,9 @@ let Data = [
     Available: true,
     Brand: "Hulsta",
     color: "black",
-    quantity: 3,
-    category: 'Office'
+    quantity: 7,
+    showcase: true,
+    category: 'Office',
   },
   {
     id: 5,
@@ -57,6 +61,7 @@ let Data = [
     Brand: "Hulsta",
     color: "black",
     quantity: 8,
+    showcase: false,
     category: 'Bedroom'
   },
   {
@@ -69,6 +74,7 @@ let Data = [
     Brand: "Ikea",
     color: "black",
     quantity: 5,
+    showcase: false,
     category: 'Bedroom'
   },
   {
@@ -81,6 +87,7 @@ let Data = [
     Brand: "Nilkamal",
     color: "black",
     quantity: 5,
+    showcase: false,
     category: 'Office'
   },
   {
@@ -93,6 +100,7 @@ let Data = [
     Brand: "Ikea",
     color: "black",
     quantity: 5,
+    showcase: false,
     category: 'Living Room'
   },
   {
@@ -104,7 +112,8 @@ let Data = [
     Available: true,
     Brand: "Hulsta",
     color: "black",
-    quantity: 5,
+    quantity: 8,
+    showcase: false,
     category: 'Kids'
   },
 
@@ -117,7 +126,8 @@ let Data = [
     Available: true,
     Brand: "Ikea",
     color: "black",
-    quantity: 3,
+    quantity: 6,
+    showcase: false,
     category: 'Office'
   },
   {
@@ -129,7 +139,8 @@ let Data = [
     Available: true,
     Brand: "Hulsta",
     color: "black",
-    quantity: 4,
+    quantity: 10,
+    showcase: false,
     category: 'Kitchen Table'
   },
   {
@@ -141,7 +152,8 @@ let Data = [
     Available: true,
     Brand: "Ikea",
     color: "black",
-    quantity: 4,
+    quantity: 7,
+    showcase: false,
     category: 'Bedroom'
   },
   {
@@ -154,6 +166,7 @@ let Data = [
     Brand: "Godrej Interio",
     color: "black",
     quantity: 5,
+    showcase: false,
     category: 'Living Room'
   },
   {
@@ -166,6 +179,7 @@ let Data = [
     Brand: "Ikea",
     color: "black",
     quantity: 10,
+    showcase: false,
     category: 'Office',
   },
 
@@ -179,6 +193,7 @@ let Data = [
     Brand: "Ikea",
     color: "black",
     quantity: 5,
+    showcase: true,
     category: 'Office',
   },
 
@@ -192,6 +207,7 @@ let Data = [
     Brand: "Ikea",
     color: "black",
     quantity: 4,
+    showcase: false,
     category: 'Dinning Table'
   },
   {
@@ -204,6 +220,7 @@ let Data = [
     Brand: "Ikea",
     color: "Hulsta",
     quantity: 6,
+    showcase: false,
     category: 'Living Room'
   },
   {
@@ -216,6 +233,7 @@ let Data = [
     Brand: "Godrej Interio",
     color: "black",
     quantity: 4,
+    showcase: false,
     category: 'Living Room'
   },
   {
@@ -228,6 +246,7 @@ let Data = [
     Brand: "Godrej Interio",
     color: "black",
     quantity: 6,
+    showcase: false,
     category: 'Office'
   },
   {
@@ -240,6 +259,7 @@ let Data = [
     Brand: "Godrej Interio",
     color: "black",
     quantity: 5,
+    showcase: true,
     category: 'Living Room'
   },
 
@@ -254,6 +274,7 @@ let Data = [
     Brand: "Godrej Interio",
     color: "black",
     quantity: 4,
+    showcase: false,
     category: 'Living Room'
   },
   {
@@ -266,6 +287,7 @@ let Data = [
     Brand: "Nilkamal",
     color: "black",
     quantity: 6,
+    showcase: false,
     category: 'Office',
   },
   {
@@ -278,6 +300,7 @@ let Data = [
     Brand: "Marcos",
     color: "black",
     quantity: 6,
+    showcase: false,
     category: 'Living Room',
   },
 ];

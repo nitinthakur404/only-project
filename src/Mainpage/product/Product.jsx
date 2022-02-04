@@ -13,28 +13,28 @@ function Product(props) {
     // console.log(passingData, "inside of product")
     return (
         <>
-            {/* <div className="About">
-            <Navmenubar />
+            <div className="About">
+                <Navmenubar />
 
-            <div className="upperHeadingPageName">
-                <h1>
-                    <Link to="./" className='homeLink'>Home  </Link>   /   product</h1>
-            </div>
-
-            <div className='productFlex'>
-                <div className='FilterdataCompo'>
-                    <FilterdataCompo setpassingData={setpassingData} setinputgetdata={setinputgetdata} />
+                <div className="upperHeadingPageName">
+                    <h1>
+                        <Link to="./" className='homeLink'>Home  </Link>   /   product</h1>
                 </div>
-                <div className='Cardcompo'>
 
-                    <Cardcompo value={passingData} inputgetdata={inputgetdata} />
+                <div className='productFlex'>
+                    <div className='FilterdataCompo'>
+                        <FilterdataCompo setpassingData={setpassingData} setinputgetdata={setinputgetdata} />
+                    </div>
+                    <div className='Cardcompo'>
 
+                        <Cardcompo value={passingData} inputgetdata={inputgetdata} />
+
+                    </div>
+                </div>
+                <div className='footerCompo' >
+                    <Footer />
                 </div>
             </div>
-            <div className='footerCompo' >
-                <Footer />
-            </div>
-        </div> */}
         </>
     )
 }

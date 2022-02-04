@@ -1,22 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navmenubar from '../Home/Navmenubar'
 import Data from '../Data'
 import './CompleterDetails.css'
 import { Link } from 'react-router-dom'
-
-
+import { RiCreativeCommonsZeroLine } from 'react-icons/ri'
+import { BsChevronDoubleLeft, BsConeStriped } from 'react-icons/bs'
 function CompleterDetails({ match }) {
     const images = ['', '../image/z-extra-1.jpg', "../image/z-extra-2.jpg", "../image/z-extra-3.jpg", "../image/z-extra-4.jpg"]
     const filterdData = Data.filter((filterdata) => {
         return (filterdata.id === Number(match.params.id))
     })
+
     images[0] = filterdData[0].image
-    // console.log()
     const [changeImage, setchangeImage] = useState(images[0])
     const [noOfitems, setnoOfitems] = useState(1)
     const [storeInLocal, setstoreInLocal] = useState([])
+    const [count, setcount] = useState(0)
     const filtereddata = filterdData[0]
-    let detailsObject = {
+    useEffect(() => {
+        console.log(count)
+        setcount(0)
+    }, [count])
+
+    let obj1 = {
         uniqueid: filtereddata.id,
         image: filtereddata.image,
         name: filtereddata.name,
@@ -24,7 +30,8 @@ function CompleterDetails({ match }) {
         price: filtereddata.price,
         quantity: filtereddata.quantity
     }
-    // console.log(obj1, "obj1")
+
+
 
     const handlecartaddbutton = (obj) => {
 
@@ -32,21 +39,17 @@ function CompleterDetails({ match }) {
             storeInLocal.push(obj)
             localStorage.setItem('cart', JSON.stringify(storeInLocal))
             setstoreInLocal([])
-
         }
         else {
             let result = JSON.parse(localStorage.getItem('cart'))
             const indexoffilter = result.map((i) => { return (i.uniqueid) }).indexOf(obj.uniqueid)
-
+            console.log(indexoffilter)
             if (indexoffilter != -1) {
+
+                let updatelocalstore = []
                 const getitem = JSON.parse(localStorage.getItem('cart'))
                 const totalNoItem = result[indexoffilter].nocartitem + obj.nocartitem
-                let updatelocalstore = []
-
-                if (result[indexoffilter].quantity <= result[indexoffilter].nocartitem) {
-
-                }
-                else {
+                if (result[indexoffilter].quantity >= totalNoItem) {
                     result[indexoffilter].nocartitem = totalNoItem
                     updatelocalstore = [...result]
                     localStorage.setItem('cart', JSON.stringify(result))
@@ -60,8 +63,7 @@ function CompleterDetails({ match }) {
                 localStorage.setItem('cart', JSON.stringify(result))
 
             }
-
-
+            setcount(count + 1)
         }
     }
 
@@ -84,7 +86,9 @@ function CompleterDetails({ match }) {
                     <div className='slideImageShow'>
                         {
                             images.map((image, index) => {
+
                                 {/* console.log("images", image) */ }
+
                                 return (
                                     <div className='slideImageShowInMap' key={index}>
                                         <img src={image} className={(changeImage == images[index]) ? 'activeed' : 'nulled'} onClick={() => {
@@ -130,8 +134,10 @@ function CompleterDetails({ match }) {
                                                 return (noOfitems < filtereddata.quantity) ? setnoOfitems(noOfitems + 1) : null
                                             }}>+</button>
                                     </div>
-                                    <button className='addtocartbutton' onClick={() => { handlecartaddbutton(detailsObject) }}>
-                                        Add to cart</button>
+                                    <Link to='/cart'>
+                                        <button className='addtocartbutton' onClick={() => { handlecartaddbutton(obj1) }}>
+                                            Add to cart</button>
+                                    </Link>
 
 
                                 </div>
@@ -163,15 +169,9 @@ export default CompleterDetails
 //     onClick={() => {
 //         return (noOfitems < filtereddata.quantity) ? setnoOfitems(noOfitems + 1) : null
 //     }}>+</button>
-
 // </div>
 
-
-
-
 // filter
-
-
         //     result.filter((element, index) => {
 
                 // if (obj.uniqueid == element.uniqueid) {

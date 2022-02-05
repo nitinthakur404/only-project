@@ -2,22 +2,58 @@
   width: 22em;
   height: 13em;
   float: Right;
-  margin: 14px 78px;
-  padding: 4px 3px;
+  margin: 21px 78px;
+  padding: 15px 2px;
   margin-top: 34px;
   border-style: solid;
   border-image: linear-gradient(to bottom, green, rgba(0, 0, 0, 0)) 1 100%;
 }
-.Subtotal {
+.Subtotal,
+.Shipping,
+.total {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
   flex-direction: row;
-  padding: 0.2em 2.9em;
   font-size: 22px;
 }
+.Subtotal {
+  position: relative;
+  left: -13px;
+}
+.Subtotalprice {
+  width: 3em;
+  position: relative;
+  left: 47px;
+}
+.Shippingprice {
+  position: relative;
+  left: 15px;
+}
+.total {
+  margin: -18px 5px;
+}
 .hrpriceLine {
-  width: 95%;
+  width: 85%;
   margin: 16px 25px;
+}
+.ShippingTag {
+  font-size: 22px;
+  margin: 1px -34px;
+}
+.total {
+  border: 0.1px solid transparent;
+}
+.totalTag {
+  margin: 1px -15px;
+  position: relative;
+  left: 1.2em;
+}
+.totalprice {
+  width: 6em;
+  height: auto;
+  position: relative;
+  left: 60px;
+  text-align: center;
 }

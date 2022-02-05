@@ -9,14 +9,12 @@ import PriceDetails from './Mainpage/product/PriceDetails';
 function Cart() {
     const [count, setcount] = useState(0)
     const localdata = JSON.parse(localStorage.getItem('cart'))
-    console.log(localdata)
     useEffect(() => {
         return () => {
         };
     }, [count]);
 
     const handleRemoveButton = (uniqueid) => {
-        console.log('function work', uniqueid)
         let getDataLocalStore = JSON.parse(localStorage.getItem('cart'))
         const filtetremoveitem = getDataLocalStore.filter((item) => {
             return item.uniqueid !== uniqueid
@@ -27,28 +25,23 @@ function Cart() {
 
 
     const itemNochangeHandle = (value, index) => {
-        // console.log(value, index)
+
         let result = JSON.parse(localStorage.getItem('cart'))
         const indexoffilter = result.map((i) => { return (i.uniqueid) }).indexOf(index)
-        // console.log(indexoffilter)
         if (indexoffilter != -1) {
             let updatelocalstore = []
             const getitem = JSON.parse(localStorage.getItem('cart'))
             const totalNoItem = (value == true) ? result[indexoffilter].nocartitem + 1 : result[indexoffilter].nocartitem - 1
-            console.log(result[indexoffilter].nocartitem, "result[indexoffilter].nocartitem")
 
-            console.log(result[indexoffilter].quantity, "result[indexoffilter].quantity")
             if (result[indexoffilter].quantity >= totalNoItem && totalNoItem > 0) {
-
                 result[indexoffilter].nocartitem = totalNoItem
                 updatelocalstore = [...result]
                 localStorage.setItem('cart', JSON.stringify(result))
                 setcount(count + 1)
             }
-
         }
     }
-    console.log(localdata, 'localStorage.getItem.length')
+
     if (localdata.length !== 0 && localdata !== undefined) {
         return <section className='Cart_Maincontainer'>
             <Navmenubar />
@@ -71,7 +64,6 @@ function Cart() {
                 {
                     localdata.map((item, index) => {
                         const valueOfSubtotal = item.nocartitem * item.price
-                        console.log(valueOfSubtotal, item.nocartitem)
                         return (
                             <div className='dynamicItemshow' key={index}>
                                 <div className='itemimage'>

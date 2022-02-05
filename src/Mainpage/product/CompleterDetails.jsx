@@ -170,7 +170,6 @@ export default CompleterDetails
 //         return (noOfitems < filtereddata.quantity) ? setnoOfitems(noOfitems + 1) : null
 //     }}>+</button>
 // </div>
-
 // filter
         //     result.filter((element, index) => {
 

@@ -25,7 +25,7 @@ function Navmenubar() {
       </div>
       <div className="Menu-options">
         <Link className=".Menu-options-ul" to="/">
-          Home
+          nitin
         </Link>
         <Link to="/about">About</Link>
         <Link to="/Product">Products</Link>

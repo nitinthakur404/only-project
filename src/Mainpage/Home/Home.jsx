@@ -9,7 +9,6 @@ import Contactus from './Contactus'
 function Home() {
   return (
     <div>
-
       <Navmenubar />
       <FirstUppersection />
       <FeaturedProduct />

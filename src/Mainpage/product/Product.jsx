@@ -6,7 +6,7 @@ import FilterdataCompo from './FilterdataCompo'
 import Footer from '../Home/Footer'
 import { Link } from "react-router-dom";
 
-function Product(props) {
+function Product() {
     const [passingData, setpassingData] = useState()
     const [inputgetdata, setinputgetdata] = useState()
     return (

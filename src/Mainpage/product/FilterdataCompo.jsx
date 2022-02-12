@@ -46,17 +46,13 @@ function Filter(props) {
 
 
         }
-        if (filters == 'All') {
+        if (filters === 'All') {
             const categoryFilter = data.filter((item) => {
                 return item.category === filters["category"];
             })
             data = [...categoryFilter]
 
-
         }
-
-
-
         if (filters.Brand) {
             if (!filters.category) {
                 const brandFilter = Database.filter((item) => {
@@ -64,7 +60,7 @@ function Filter(props) {
                 });
                 data = [...brandFilter]
             }
-            if (filters.Brand == 'All') {
+            if (filters.Brand === 'All') {
                 const brandFilter = Database.filter((item) => {
                     return item.category !== filters["All"];
                 })
@@ -100,7 +96,6 @@ function Filter(props) {
 
         }
         setsecondStoredata(data)
-        console.log(data, 'last')
     };
 
 
@@ -140,7 +135,7 @@ function Filter(props) {
                     }}
                 >
                     {brands.map((BrandName, index) => {
-                        return <option value={BrandName}>{BrandName}</option>
+                        return <option value={BrandName} key={index}>{BrandName}</option>
                     })}
                 </select>
             </article>

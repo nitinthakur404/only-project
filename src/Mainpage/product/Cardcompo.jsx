@@ -16,7 +16,7 @@ const cardSearchFilters = (value, inputgetdata) => {
     }
   })
 
-  if (searchItem.length == 0) {
+  if (searchItem.length === 0) {
     return <h4  >sorry record not found</h4>
   }
 
@@ -62,7 +62,7 @@ const cardSearchFilters = (value, inputgetdata) => {
 
 function Cardcompo(props) {
 
-  if (props.value == undefined || props.value.length == 0) {
+  if (props.value === undefined || props.value.length === 0) {
 
     return <>
       <h4> sorry record not found</h4>

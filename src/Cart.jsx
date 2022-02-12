@@ -29,8 +29,7 @@ function Cart() {
         let result = JSON.parse(localStorage.getItem('cart'))
         const indexoffilter = result.map((i) => { return (i.uniqueid) }).indexOf(index)
         if (indexoffilter !== -1) {
-            // let updatelocalstore = []
-            // const getitem = JSON.parse(localStorage.getItem('cart'))
+
             const totalNoItem = (value === true) ? result[indexoffilter].nocartitem + 1 : result[indexoffilter].nocartitem - 1
 
             if (result[indexoffilter].quantity >= totalNoItem && totalNoItem > 0) {

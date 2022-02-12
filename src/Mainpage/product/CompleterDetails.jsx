@@ -34,7 +34,7 @@ function CompleterDetails({ match }) {
 
     const handlecartaddbutton = (obj) => {
 
-        if ((localStorage.cart) == null || (localStorage.cart) == '[]') {
+        if ((localStorage.cart) === null || (localStorage.cart) === '[]') {
             storeInLocal.push(obj)
             localStorage.setItem('cart', JSON.stringify(storeInLocal))
             setstoreInLocal([])
@@ -87,7 +87,7 @@ function CompleterDetails({ match }) {
 
                                 return (
                                     <div className='slideImageShowInMap' key={index}>
-                                        <img src={image} className={(changeImage == images[index]) ? 'activeed' : 'nulled'} onClick={() => {
+                                        <img src={image} className={(changeImage === images[index]) ? 'activeed' : 'nulled'} onClick={() => {
                                             setchangeImage(images[index])
                                         }}></img>
                                     </div>
@@ -115,7 +115,7 @@ function CompleterDetails({ match }) {
                     <hr className='horizantalline'></hr>
                     <div className='addToCartShowToggle'>
                         {
-                            (filtereddata.Available == true) ?
+                            (filtereddata.Available === true) ?
                                 <div>
                                     <div className='addToCartShowDiv '>
 

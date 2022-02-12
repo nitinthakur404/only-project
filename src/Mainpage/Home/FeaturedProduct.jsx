@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // import './Cardcompo.css'
 
 const FeaturedProduct = () => {
-  let filterShowCaseData = Data.filter((item) => { return item.showcase == true })
+  let filterShowCaseData = Data.filter((item) => { return item.showcase === true })
   
   return (
     <section className="FeaturedProduct-main-container">

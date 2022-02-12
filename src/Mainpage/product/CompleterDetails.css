@@ -20,8 +20,6 @@
   font-size: 25px;
   color: #324d67;
 }
-.completerDetailsCompo {
-}
 
 .completerDetailsSection {
   height: 60rem;
@@ -115,8 +113,7 @@
 .addToCartShowDiv {
   display: flex;
 }
-.addToCartShowDiv {
-}
+
 .samebutton {
   font-size: 2.2rem;
   height: 38px;
@@ -146,9 +143,7 @@
   border: 1px solid transparent;
   background-color: transparent;
 }
-.addToCartShowToggle {
-  /* display: none; */
-}
+
 .addtocartbutton {
   height: 2.2rem;
   width: 9.9rem;

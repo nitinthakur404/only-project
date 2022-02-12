@@ -1,5 +1,6 @@
 import React from "react";
 import "./firstUppersection.css";
+import { Link } from 'react-router-dom'
 
 function FirstUppersection() {
   return (
@@ -9,16 +10,16 @@ function FirstUppersection() {
           Design Your <br />
           Comfort Zone
         </h1>
-        <p className="container_first_para"> 
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at sed omnis corporis doloremque possimus velit! Repudiandae nisi odit, aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis alias?</p>
-        <button  className='container_first_button'>
-        <a href='../product'>Shop Now</a></button>
-      </article> 
+        <p className="container_first_para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at sed omnis corporis doloremque possimus velit! Repudiandae nisi odit, aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis alias?</p>
+        <button className='container_first_button'>
+          <Link to='../product'>Shop Now</Link></button>
+      </article>
 
       <article className="container_second">
-      <img className="First_container_img" src="./image/chair.png" alt="logoimg"></img>
-    <div className="back_Square"></div>
-       </article>
+        <img className="First_container_img" src="./image/chair.png" alt="logoimg"></img>
+        <div className="back_Square"></div>
+      </article>
     </section>
   );
 

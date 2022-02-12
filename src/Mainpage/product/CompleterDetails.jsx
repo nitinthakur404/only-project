@@ -18,7 +18,6 @@ function CompleterDetails({ match }) {
     const [count, setcount] = useState(0)
     const filtereddata = filterdData[0]
     useEffect(() => {
-        console.log(count)
         setcount(0)
     }, [count])
 
@@ -43,7 +42,7 @@ function CompleterDetails({ match }) {
         else {
             let result = JSON.parse(localStorage.getItem('cart'))
             const indexoffilter = result.map((i) => { return (i.uniqueid) }).indexOf(obj.uniqueid)
-            console.log(indexoffilter)
+
             if (indexoffilter != -1) {
 
                 let updatelocalstore = []
@@ -57,8 +56,7 @@ function CompleterDetails({ match }) {
 
             }
             else {
-                console.log("we are in the right path")
-                // console.log(result, "result else")
+
                 result.push(obj)
                 localStorage.setItem('cart', JSON.stringify(result))
 
@@ -86,8 +84,6 @@ function CompleterDetails({ match }) {
                     <div className='slideImageShow'>
                         {
                             images.map((image, index) => {
-
-                                {/* console.log("images", image) */ }
 
                                 return (
                                     <div className='slideImageShowInMap' key={index}>
@@ -152,41 +148,4 @@ function CompleterDetails({ match }) {
         </section>
     )
 }
-
 export default CompleterDetails
-
-//  <div className='addToCartShowDiv '>
-
-// <button className='removebutton samebutton' onClick={() => {
-//     return (noOfitems > 0) ? setnoOfitems(noOfitems - 1) : null
-
-// }}>-</button>
-
-// <div className='itemNoShow'>{noOfitems}</div>
-
-
-// <button className='addbutton samebutton'
-//     onClick={() => {
-//         return (noOfitems < filtereddata.quantity) ? setnoOfitems(noOfitems + 1) : null
-//     }}>+</button>
-// </div>
-// filter
-        //     result.filter((element, index) => {
-
-                // if (obj.uniqueid == element.uniqueid) {
-                //     let updatelocalstore = []
-                //     const getitem = JSON.parse(localStorage.getItem('cart'))
-                //     const totalNoItem = result[index].nocartitem + obj.nocartitem
-                //     result[index].nocartitem = totalNoItem
-                //     // updatelocalstore = [...result]
-                //     localStorage.setItem('cart', JSON.stringify(result))
-
-                // }
-                // if (element.uniqueid != obj.uniqueid) {
-                //     // console.log(result, "result else")
-                //     result.push(obj)
-                //     localStorage.setItem('cart', JSON.stringify(result))
-                // }
-            // })
-            // console.log(JSON.parse(localStorage.cart))
-        // }

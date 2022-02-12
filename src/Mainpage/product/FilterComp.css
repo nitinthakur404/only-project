@@ -33,7 +33,7 @@
 }
 .category p {
   font-size: 20px;
-  font-family: -webkit-pictograph;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
 }
 .categoryFilter {
@@ -48,10 +48,6 @@
 .categoryFilter:hover {
   color: rgb(0, 70, 248);
 }
-
-.categoryFilterContainer {
-}
-
 .categoryFilter:focus {
   text-decoration: underline;
   text-decoration-color: rgb(158, 190, 216);
@@ -64,14 +60,14 @@
 }
 .Brandcompo h3 {
   font-size: 20px;
-  font-family: -webkit-pictograph;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
 }
 .Pricerange p {
   padding-top: 20px;
-  font-size: 15px;
-  font-family: -webkit-pictograph;
-  /* font-weight: bolder; */
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
 }
 .clearfilte {
   padding-top: 10px;

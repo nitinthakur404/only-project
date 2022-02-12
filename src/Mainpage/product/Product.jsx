@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 function Product(props) {
     const [passingData, setpassingData] = useState()
     const [inputgetdata, setinputgetdata] = useState()
-
-    // console.log(passingData, "inside of product")
     return (
         <>
             <div className="About">

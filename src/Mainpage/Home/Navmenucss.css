@@ -53,6 +53,7 @@
 
 .cartshow-section,
 .login-section {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

@@ -84,16 +84,16 @@ function Filter(props) {
         if (filters.price) {
             if (filters.category || filters.Brand) {
                 const priceFilter = data.filter((item) => {
-                    console.log(filters['price'], "price")
+
                     return item.price <= (filters['price']);
                 })
-                console.log(priceFilter, "pricefilter")
+
                 data = [...priceFilter]
             }
 
             else {
                 const priceFilter = Database.filter((item) => {
-                    return ((item.price) <=  filters.price)
+                    return ((item.price) <= filters.price)
                 })
                 data = [...priceFilter]
             }
@@ -114,7 +114,7 @@ function Filter(props) {
                 <p> Category </p>
                 {Category.map((buttonName, index) => {
                     return (
-                        <div className="categoryFilterContainer">
+                        <div className="categoryFilterContainer" key={index}>
                             <button
                                 key={index}
                                 type="button"
@@ -147,10 +147,10 @@ function Filter(props) {
 
             <article className="Pricerange">
 
-                <p> $ {pricerange} </p>
+                <p> $ {pricerange.toLocaleString('en-IN')} </p>
                 <input type="range"
                     className="rangeFilter" onChange={(e) => {
-                        handlerangeslider(e.target.value)
+                        handlerangeslider((e.target.value.toLocaleString('en-IN')))
                     }} min="0" max="3999"
                     value={pricerange}
                 />

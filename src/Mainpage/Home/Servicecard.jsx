@@ -1,8 +1,8 @@
 import React from "react";
 import { GiArcheryTarget } from "react-icons/gi";
 function Servicecard(props) {
-  console.log(props);
-  const { icons, heading,data } = props;
+
+  const { icons, heading, data } = props;
   return (
     <section className="Service-card">
       <article className="Service-card-Icon">

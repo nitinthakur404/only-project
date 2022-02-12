@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const FeaturedProduct = () => {
   let filterShowCaseData = Data.filter((item) => { return item.showcase == true })
-  console.log(filterShowCaseData, "filterShowCaseData")
+  
   return (
     <section className="FeaturedProduct-main-container">
       <article className="FeaturedProduct-Heading">
@@ -16,13 +16,13 @@ const FeaturedProduct = () => {
       <article className="coming-Soon-article">
         {
           filterShowCaseData.map((item, index) => {
-            console.log()
+      
             return (
-              <div key={item.id}>
+              <div key={index}>
                 <section className="container-card-featured">
                   <article className="secondDetailspage">
                     <button className="hoverbutton" type="button" onClick={() => {
-                      console.log(item.id)
+
                     }}>
                       <Link to={`/Product/${item.id}`}>
                         <IoSearchCircle />

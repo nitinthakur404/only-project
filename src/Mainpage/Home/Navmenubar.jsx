@@ -10,11 +10,11 @@ function Navmenubar() {
   let addvalue = 0
   if (JSON.parse(localStorage.getItem('cart')) != null) {
     const getdata = JSON.parse(localStorage.getItem('cart'))
-    const noOfcartItem = getdata.map((item) => {
-      addvalue = addvalue + item.nocartitem
+    // const noOfcartItem = 
+    getdata.map((item) => {
+      return addvalue = addvalue + item.nocartitem
     })
   }
-  // console.log(addvalue)
 
   return (
     <div className="main-container">
@@ -25,7 +25,7 @@ function Navmenubar() {
       </div>
       <div className="Menu-options">
         <Link className=".Menu-options-ul" to="/">
-          nitin
+          Home
         </Link>
         <Link to="/about">About</Link>
         <Link to="/Product">Products</Link>

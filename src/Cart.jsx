@@ -28,21 +28,21 @@ function Cart() {
 
         let result = JSON.parse(localStorage.getItem('cart'))
         const indexoffilter = result.map((i) => { return (i.uniqueid) }).indexOf(index)
-        if (indexoffilter != -1) {
-            let updatelocalstore = []
-            const getitem = JSON.parse(localStorage.getItem('cart'))
-            const totalNoItem = (value == true) ? result[indexoffilter].nocartitem + 1 : result[indexoffilter].nocartitem - 1
+        if (indexoffilter !== -1) {
+            // let updatelocalstore = []
+            // const getitem = JSON.parse(localStorage.getItem('cart'))
+            const totalNoItem = (value === true) ? result[indexoffilter].nocartitem + 1 : result[indexoffilter].nocartitem - 1
 
             if (result[indexoffilter].quantity >= totalNoItem && totalNoItem > 0) {
                 result[indexoffilter].nocartitem = totalNoItem
-                updatelocalstore = [...result]
+                // updatelocalstore = [...result]
                 localStorage.setItem('cart', JSON.stringify(result))
                 setcount(count + 1)
             }
         }
     }
 
-    if (localdata.length !== 0 && localdata !== undefined) {
+    if (localdata !== null && localdata.length !== 0) {
         return <section className='Cart_Maincontainer'>
             <Navmenubar />
             <div className="upperHeadingPageName">
